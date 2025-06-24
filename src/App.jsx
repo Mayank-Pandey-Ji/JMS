@@ -1,13 +1,14 @@
-import './App.css'
-import HeroSection from './pages/HeroSection'
-import ProblemStatementSection from './pages/ProblemStatementSection'
+import "./App.css"
+import HeroSection from "./pages/HeroSection"
+import OnlineCohort from "./pages/OnlineCohort"
+import ProblemStatementSection from "./pages/ProblemStatementSection"
 function App() {
-
   return (
-   <div>
-    <HeroSection/>
-   <ProblemStatementSection/>
-   </div>
+    <div>
+      <HeroSection />
+      <ProblemStatementSection />
+      <OnlineCohort />
+    </div>
   )
 }
 
