@@ -6,6 +6,7 @@ import React, { useState } from "react"
 // eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from "framer-motion"
 import { ChevronLeft, ChevronRight } from "lucide-react"
+import Cohort_card from "../components/cohort_card"
 
 const images = [
   "/mentors/kalyani_vaish.png",
@@ -180,6 +181,93 @@ const OnlineCohort = () => {
                 }`}
               />
             ))}
+          </div>
+        </div>
+      </section>
+      <section className="bg-black text-white py-10 px-2">
+        <div className="flex flex-col items-center justify-center text-center w-full gap-y-4">
+          <span>How it works</span>
+          <span className="text-4xl font-bold">
+            What does the cohort look like?
+          </span>
+          <span>
+            Our program takes you on a step-by-step journey from foundational
+            skills to mastering real-world therapy:
+          </span>
+        </div>
+        <div className="w-full bg-black px-15 py-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-6 gap-4 w-full">
+            {/* Row 1, Col 1 */}
+            <div className="sm:col-start-1 sm:row-start-1 bg-black rounded shadow">
+              <Cohort_card
+                id={1}
+                title="Foundation"
+                desc={[
+                  "✦ Develop essential practical skills",
+                  "✦ Learn the traits of an effective psychologist",
+                ]}
+              />
+            </div>
+
+            {/* Row 2, Col 2 */}
+            <div className="sm:col-start-2 sm:row-start-2 bg-black rounded shadow">
+              <Cohort_card
+                id={2}
+                title="Case Mastery and Protocols"
+                desc={[
+                  "✦ Master the art of history-taking and case formulation",
+                  "✦ Gain proficiency in key therapeutic frameworks and protocols",
+                ]}
+              />
+            </div>
+
+            {/* Row 3, Col 1 */}
+            <div className="sm:col-start-1 sm:row-start-3 bg-black rounded shadow">
+              <Cohort_card
+                id={3}
+                title="Case Discussions and Demonstrations"
+                desc={[
+                  "✦ Dive into dynamic case discussions",
+                  "✦ Learn to present, analyze, and formulate cases with clarity",
+                ]}
+              />
+            </div>
+
+            {/* Row 4, Col 2 */}
+            <div className="sm:col-start-2 sm:row-start-4 bg-black rounded shadow">
+              <Cohort_card
+                id={4}
+                title="Mastering Online Therapy"
+                desc={[
+                  "✦ Learn the nuances of conducting therapy in virtual settings to make it engaging and effective",
+                  "✦ Develop confidence in using digital tools and platforms for seamless client interactions",
+                ]}
+              />
+            </div>
+
+            {/* Row 5, Col 1 */}
+            <div className="sm:col-start-1 sm:row-start-5 bg-black rounded shadow">
+              <Cohort_card
+                id={5}
+                title={"1:1 Mock Sessions"}
+                desc={[
+                  "✦ Practice diverse therapy modalities in simulated environments",
+                  "✦ Build confidence with real-world applications.",
+                ]}
+              />
+            </div>
+
+            {/* Row 6, Col 2 */}
+            <div className="sm:col-start-2 sm:row-start-6 bg-black rounded shadow">
+              <Cohort_card
+                id={6}
+                title="Graduation 🎓"
+                desc={[
+                  "✦ Celebrate your growth and readiness to thrive professionally.",
+                  "✦ Step into the field equipped to thrive and make a meaningful impact",
+                ]}
+              />
+            </div>
           </div>
         </div>
       </section>
