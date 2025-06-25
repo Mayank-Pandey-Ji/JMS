@@ -1,5 +1,7 @@
 // /pages/OnlineCohort.jsx
 
+// work by Haswanth Tamil
+
 import React, { useState } from "react"
 import { AnimatePresence } from "framer-motion"
 import { ChevronLeft, ChevronRight } from "lucide-react"
