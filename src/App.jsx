@@ -5,8 +5,6 @@ import ProblemStatementSection from "./pages/ProblemStatementSection"
 function App() {
   return (
     <div>
-      <HeroSection />
-      <ProblemStatementSection />
       <OnlineCohort />
     </div>
   )
