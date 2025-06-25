@@ -3,10 +3,37 @@
 // work by Haswanth Tamil
 
 import React, { useState } from "react"
-import { AnimatePresence } from "framer-motion"
+// eslint-disable-next-line no-unused-vars
+import { motion, AnimatePresence } from "framer-motion"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
-const images = []
+const images = [
+  "/mentors/kalyani_vaish.png",
+  "/mentors/harleen_aneja.png",
+  "/mentors/bidisha_samanta.png",
+  "/mentors/sucharita_chatterjee.png",
+  "/mentors/kanika_kant.png",
+  "/mentors/diya_rai.png",
+  "/mentors/ranjitha_komaravolu.png",
+  "/mentors/shruti_poonia.png",
+  "/mentors/jia_sitlani.png",
+  "/mentors/kanika_shekhawat.png",
+  "/mentors/vibha_rungta.png",
+  "/mentors/reshmithaa_nair.png",
+  "/mentors/anupama_ghose.png",
+  "/mentors/sneha_toppo.png",
+  "/mentors/guru_anirudh.png",
+  "/mentors/vaideshi_mishra.png",
+  "/mentors/agrima_chakraborty.png",
+  "/mentors/saadhvi_raju.png",
+  "/mentors/jennifer_dominic.png",
+  "/mentors/roniya_robin.png",
+  "/mentors/sukriti_dilwaria.png",
+  "/mentors/sudha_nanduri.png",
+  "/mentors/vartika_singh.png",
+  "/mentors/somdatta_mukherjee.png",
+]
+
 const IMAGES_PER_SLIDE = 3
 
 const OnlineCohort = () => {
@@ -23,77 +50,102 @@ const OnlineCohort = () => {
   return (
     <>
       <section id="cohort" className="bg-black">
-        <div className="w-full text-white py-10 flex flex-col items-center justify-center text-center gap-y-10">
-          <span className="font-semibold">6 WEEK ONLINE PROGRAM</span>
-          <span className="font-bold text-4xl max-w-sm">
+        <div className="w-full text-white py-10 flex flex-col items-center justify-center text-center gap-y-8 px-4">
+          <span className="font-semibold text-sm md:text-base">
+            6 WEEK ONLINE PROGRAM
+          </span>
+
+          <span className="font-bold text-3xl md:text-4xl max-w-xs md:max-w-md">
             Master the <a className="text-[#E7794C]">A&rarr;Z</a> of Practical
             Psychology
           </span>
-          <span className="w-xl">
+
+          <span className="text-sm md:text-base max-w-lg">
             We&#39;ll help you evolve from a young psychologist to a confident,
             skilled professional, equipping you with hands-on experience,
             real-world techniques, and the confidence to excel in therapy.
           </span>
         </div>
-        <div className="w-full flex items-center justify-center p-2">
+
+        <div className="w-full flex items-center justify-center px-4 py-6">
           <img
             src="/ggl_meet_cohort.png"
             alt="googlemeet"
-            width={700}
-            height={700}
+            className="w-full max-w-xs md:max-w-lg h-auto"
           />
         </div>
-        <div className="flex flex-col w-full items-center justify-center py-5">
-          <button className="bg-[#F25C1F] p-3 rounded-lg text-white font-semibold">
+
+        <div className="flex flex-col w-full items-center justify-center py-5 gap-y-3 px-4">
+          <button className="bg-[#F25C1F] px-6 py-3 rounded-lg text-white font-semibold text-sm md:text-base">
             Apply now
           </button>
-          <span className="text-white font-semibold py-5">
+
+          <span className="text-white font-semibold text-sm md:text-base">
             COHORT STARTS ON JULY 28
           </span>
         </div>
       </section>
       <section id="everything-you-need" className="bg-black">
-        <div className="flex flex-col sm:flex-row w-full items-center px-15 py-30">
-          <div className="flex flex-col w-3xl gap-y-12">
-            <span className="font-bold text-5xl text-white">
+        <div className="flex flex-col sm:flex-row w-full items-center justify-between px-6 md:px-16 py-10 md:py-20 gap-y-10 sm:gap-x-10">
+          {/* Text Section */}
+          <div className="flex flex-col max-w-xl gap-y-6 text-center sm:text-left">
+            <span className="font-bold text-3xl md:text-5xl text-white leading-tight">
               Everything You Need to Succeed as a Psychologist
             </span>
-            <span className="text-white font-bold text-2xl">
+
+            <span className="text-white font-bold text-xl md:text-2xl">
               Expert-Led Sessions
             </span>
-            <span className="text-gray-200/50 font-bold text-2xl">
-              Structured Training programs
+
+            <span className="text-gray-200/70 font-bold text-xl md:text-2xl">
+              Structured Training Programs
             </span>
-            <span className="text-gray-200/50 font-bold text-2xl">
+
+            <span className="text-gray-200/70 font-bold text-xl md:text-2xl">
               Community and Mentorship
             </span>
-            <span className="text-gray-200/50 font-bold text-2xl">
+
+            <span className="text-gray-200/70 font-bold text-xl md:text-2xl">
               Certification and Beyond
             </span>
           </div>
-          <div>
+
+          {/* Image Section */}
+          <div className="w-full sm:w-auto flex justify-center">
             <img
               src="/ggl_meet_2.png"
               alt="googlemeet"
-              width={600}
-              height={600}
-              className="rounded-2xl"
+              className="w-full max-w-xs sm:max-w-md md:max-w-lg rounded-2xl h-auto"
             />
           </div>
         </div>
       </section>
-      <section id="mentors">
-        <div className="w-full max-w-4xl mx-auto py-8">
+      <section id="mentors" className="bg-black">
+        <div className="w-full text-white bg-black py-10 flex flex-col items-center justify-center text-center gap-y-4 px-4">
+          <span className="font-semibold text-base md:text-lg">
+            MEET YOUR MENTORS
+          </span>
+
+          <span className="font-bold text-2xl md:text-4xl max-w-xl leading-snug">
+            Guided by world-class psychologists, every week.
+          </span>
+
+          <span className="text-sm md:text-base text-gray-200">
+            Learn from the best
+          </span>
+        </div>
+
+        <div className="w-full mx-auto py-8 bg-black">
           <div className="relative overflow-hidden">
             <button
               onClick={prevPage}
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md"
+              className="absolute left-5 top-1/2 -translate-y-1/2 z-10 bg-transparent text-orange-400 border-2 border-orange-400 p-1 rounded-full shadow-md hover:-translate-x-2 transition-all duration-200 ease-in-out"
             >
               <ChevronLeft />
             </button>
 
-            <div className="flex gap-4 justify-center">
-              <AnimatePresence mode="wait">
+            <div className="flex gap-4 justify-center bg-black">
+              <AnimatePresence>
                 {visibleImages.map((src, idx) => (
                   <motion.img
                     key={src}
@@ -111,7 +163,7 @@ const OnlineCohort = () => {
 
             <button
               onClick={nextPage}
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white p-2 rounded-full shadow-md"
+              className="absolute right-5 top-1/2 -translate-y-1/2 z-10 bg-trnasparent text-orange-400 border-2 border-orange-400 p-1 rounded-full shadow-md hover:translate-x-2 transition-all duration-200 ease-in-out"
             >
               <ChevronRight />
             </button>
@@ -123,8 +175,8 @@ const OnlineCohort = () => {
               <button
                 key={i}
                 onClick={() => setPage(i)}
-                className={`w-3 h-3 rounded-full ${
-                  i === page ? "bg-black" : "bg-gray-400"
+                className={`w-2 h-2 rounded-full ${
+                  i === page ? "bg-orange-400" : "bg-gray-900"
                 }`}
               />
             ))}
