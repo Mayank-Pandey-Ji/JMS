@@ -41,7 +41,7 @@ const Thoughts = () => {
   }
 
   const wordFade = {
-    hidden: { opacity: 0.3 },
+    hidden: { opacity: 0.2 },
     visible: { opacity: 1, transition: { duration: 0.4, ease: "easeOut" } },
   }
 
@@ -66,7 +66,7 @@ const Thoughts = () => {
               variants={lineContainer}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.2 }}
+              viewport={{ once: false, amount: 0.2 }}
               custom={index}
             >
               {words.map((word, i) => (
