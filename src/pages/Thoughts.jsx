@@ -60,7 +60,7 @@ const Thoughts = () => {
           return (
             <motion.div
               key={index}
-              className={`flex flex-wrap text-2xl sm:text-3xl md:text-4xl px-2 sm:px-5 md:px-35 leading-relaxed ${
+              className={`flex flex-wrap text-2xl sm:text-3xl md:text-4xl px-2 sm:px-5 md:px-40 leading-relaxed ${
                 highlight ? "font-semibold font-sans" : "font-serif"
               }`}
               variants={lineContainer}
