@@ -1,6 +1,11 @@
 // /pages/HeroPage.jsx
+import { useNavigate } from "react-router-dom"
 
 const HeroPage = () => {
+  const navigate = useNavigate()
+  const goToAbout = () => {
+    navigate('/about');
+  };
   return (
     <section id="hero">
       <div className="w-full relative h-[100vh] -z-20 bg-[#02050a]">
@@ -24,7 +29,7 @@ const HeroPage = () => {
             for success as a professional psychologist.
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 items-center text-white">
-            <button className="bg-[#27d587] hover:bg-[#f0f2f1] hover:text-[#5fc094] rounded-lg py-2 px-4 transition-all duration-300 hover:cursor-pointer">
+            <button onClick={goToAbout} className="bg-[#27d587] hover:bg-[#f0f2f1] hover:text-[#5fc094] rounded-lg py-2 px-4 transition-all duration-300 hover:cursor-pointer">
             Apply now
           </button>
             <span className="text-sm sm:text-base font-semibold px-6 w-xs text-center">

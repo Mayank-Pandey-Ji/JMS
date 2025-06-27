@@ -7,6 +7,8 @@ import React, { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import CohortCard from "../components/CohortCard.jsx"
+import { useNavigate } from "react-router-dom"
+
 
 const images = [
   "/mentors/kalyani_vaish.png",
@@ -39,6 +41,10 @@ const IMAGES_PER_SLIDE = 3
 
 const OnlineCohort = () => {
   const [page, setPage] = useState(0)
+   const navigate = useNavigate()
+  const goToAbout = () => {
+    navigate('/about');
+  };
   const totalPages = Math.ceil(images.length / IMAGES_PER_SLIDE)
 
   const nextPage = () => setPage((prev) => (prev + 1) % totalPages)
@@ -77,7 +83,7 @@ const OnlineCohort = () => {
         </div>
 
         <div className="flex flex-col w-full items-center justify-center py-5 gap-y-3 px-4">
-          <button className="bg-[#27d587] hover:bg-[#f0f2f1] hover:text-[#5fc094] rounded-lg py-2 px-4 transition-all duration-300 hover:cursor-pointer">
+          <button onClick={goToAbout} className="bg-[#27d587] hover:bg-[#f0f2f1] hover:text-[#5fc094] rounded-lg py-2 px-4 transition-all duration-300 hover:cursor-pointer">
             Apply now
           </button>
 

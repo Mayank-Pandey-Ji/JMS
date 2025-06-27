@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react"
-
+import { useNavigate } from "react-router-dom"
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
-
+  const navigate = useNavigate()
+  const goToAbout = () => {
+    navigate('/about');
+  };
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
@@ -27,7 +30,7 @@ export default function Header() {
           />
         </h1>
         <nav className="space-x-6">
-          <button className="bg-[#27d587] hover:bg-[#f0f2f1] hover:text-[#5fc094] rounded-lg py-2 px-4 transition-all duration-300 hover:cursor-pointer">
+          <button onClick={goToAbout} className="bg-[#27d587] hover:bg-[#f0f2f1] hover:text-[#5fc094] rounded-lg py-2 px-4 transition-all duration-300 hover:cursor-pointer">
             Apply now
           </button>
         </nav>
