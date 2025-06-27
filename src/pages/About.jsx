@@ -1,67 +1,204 @@
 import React, { useState } from 'react';
 
 const About = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+  const [step, setStep] = useState(0);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form Submitted:", formData);
-    // Tu yahan backend call bhi kar sakta hai
-  };
+  const nextStep = () => setStep((prev) => prev + 1);
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-md mx-auto p-4 shadow-md rounded-lg bg-white space-y-4">
-      <h2 className="text-xl font-semibold text-center">Contact Form</h2>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#0d0d0d] text-green-400 p-6">
+      {step === 0 && (
+        <div className="text-center space-y-4">
+          <h2 className="text-xl">Hello hello 👋</h2>
+          <h1 className="text-2xl font-semibold">Welcome to Rocket Academy 🚀</h1>
+          <p className="text-lg">Please fill in the following questions, to help us know you better.</p>
+          <button
+            onClick={nextStep}
+            className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700"
+          >
+            Start
+          </button>
+          <p className="text-sm">press <span className="font-bold">Enter ↵</span></p>
+        </div>
+      )}
 
-      <input
-        type="text"
-        name="name"
-        placeholder="Your Name"
-        value={formData.name}
-        onChange={handleChange}
-        className="w-full border border-gray-300 p-2 rounded"
-        required
-      />
+      {step === 1 && (
+        <div className="text-center space-y-4">
+          <p className="text-lg">
+            <span className="font-semibold">Please note:</span> This form also contains questions where in you will be required submit your resume
+          </p>
+          <button
+            onClick={nextStep}
+            className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700"
+          >
+            Continue
+          </button>
+          <p className="text-sm">press <span className="font-bold">Enter ↵</span></p>
+        </div>
+      )}
 
-      <input
-        type="email"
-        name="email"
-        placeholder="Your Email"
-        value={formData.email}
-        onChange={handleChange}
-        className="w-full border border-gray-300 p-2 rounded"
-        required
-      />
+      {step === 2 && (
+        <div className="text-center space-y-4 w-full max-w-xl">
+          <label className="text-lg font-semibold">1 → What's your Full Name*</label>
+          <input
+            type="text"
+            placeholder="Type your answer here..."
+            className="w-full p-2 border-b-2 border-green-600 bg-transparent text-green-400 placeholder-green-300 focus:outline-none"
+          />
+          <button onClick={nextStep} className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">
+            OK
+          </button>
+        </div>
+      )}
 
-      <textarea
-        name="message"
-        placeholder="Your Message"
-        value={formData.message}
-        onChange={handleChange}
-        className="w-full border border-gray-300 p-2 rounded"
-        rows="4"
-        required
-      ></textarea>
+      {step === 3 && (
+        <div className="text-center space-y-4 w-full max-w-xl">
+          <label className="text-lg font-semibold">2 → Your Email ID*</label>
+          <input
+            type="email"
+            placeholder="name@example.com"
+            className="w-full p-2 border-b-2 border-green-600 bg-transparent text-green-400 placeholder-green-300 focus:outline-none"
+          />
+          <button onClick={nextStep} className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">
+            OK
+          </button>
+        </div>
+      )}
 
-      <button
-        type="submit"
-        className="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700"
-      >
-        Submit
-      </button>
-    </form>
+      {step === 4 && (
+        <div className="text-center space-y-4 w-full max-w-xl">
+          <label className="text-lg font-semibold">3 → What's your phone number?*</label>
+          <input
+            type="tel"
+            placeholder="81234 56789"
+            className="w-full p-2 border-b-2 border-green-600 bg-transparent text-green-400 placeholder-green-300 focus:outline-none"
+          />
+          <button onClick={nextStep} className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">
+            OK
+          </button>
+        </div>
+      )}
+
+      {step === 5 && (
+        <div className="text-center space-y-4 w-full max-w-xl">
+          <label className="text-lg font-semibold">4 → Where are you located?*</label>
+          <p className="text-sm">The training is online, but we would like to know where you are located.</p>
+          <input
+            type="text"
+            placeholder="Type your answer here..."
+            className="w-full p-2 border-b-2 border-green-600 bg-transparent text-green-400 placeholder-green-300 focus:outline-none"
+          />
+          <button onClick={nextStep} className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">
+            OK
+          </button>
+        </div>
+      )}
+
+      {step === 6 && (
+        <div className="text-center space-y-4 w-full max-w-xl">
+          <label className="text-lg font-semibold">5 → How old are you?*</label>
+          <input
+            type="text"
+            placeholder="Type your answer here..."
+            className="w-full p-2 border-b-2 border-green-600 bg-transparent text-green-400 placeholder-green-300 focus:outline-none"
+          />
+          <button onClick={nextStep} className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">
+            OK
+          </button>
+        </div>
+      )}
+
+      {step === 7 && (
+        <div className="text-center space-y-4 w-full max-w-xl">
+          <label className="text-lg font-semibold">6 → What was your sex assigned at birth?*</label>
+          <div className="space-y-2">
+            {['Male', 'Female', 'Do not wish to mention', 'Other'].map((option, index) => (
+              <div
+                key={index}
+                className="border border-green-600 bg-green-900 text-green-300 p-2 rounded cursor-pointer hover:bg-green-800"
+              >
+                {String.fromCharCode(65 + index)}. {option}
+              </div>
+            ))}
+          </div>
+          <button onClick={nextStep} className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">
+            OK
+          </button>
+        </div>
+      )}
+
+      {step === 8 && (
+        <div className="text-center space-y-4 w-full max-w-xl">
+          <label className="text-lg font-semibold">7 → What's your gender?*</label>
+          <div className="space-y-2">
+            {['Man', 'Women', 'Transgender Man', 'Transgender Women' , 'Agender' , 'Others'].map((option, index) => (
+              <div
+                key={index}
+                className="border border-green-600 bg-green-900 text-green-300 p-2 rounded cursor-pointer hover:bg-green-800"
+              >
+                {String.fromCharCode(65 + index)}. {option}
+              </div>
+            ))}
+          </div>
+          <button  onClick={nextStep} className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">
+            OK
+          </button>
+        </div>
+      )}
+
+      {step === 9 && (
+        <div className="text-center space-y-4 w-full max-w-xl">
+          <label className="text-lg font-semibold">8 → What are your pronouns?*</label>
+          <div className="space-y-2">
+            {['She/her', 'he/him', 'they/them', 'Other'].map((option, index) => (
+              <div
+                key={index}
+                className="border border-green-600 bg-green-900 text-green-300 p-2 rounded cursor-pointer hover:bg-green-800"
+              >
+                {String.fromCharCode(65 + index)}. {option}
+              </div>
+            ))}
+          </div>
+          <button onClick={nextStep} className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">
+            OK
+          </button>
+        </div>
+      )}
+
+      {step === 10 && (
+        <div className="text-center space-y-4 w-full max-w-xl">
+          <label className="text-lg font-semibold">9 → Is this the first time you are applying at Rocket Health/ Rocket Academy?*</label>
+          <div className="space-y-2">
+            {['Yes', 'No, I have applied Before'].map((option, index) => (
+              <div
+                key={index}
+                className="border border-green-600 bg-green-900 text-green-300 p-2 rounded cursor-pointer hover:bg-green-800"
+              >
+                {String.fromCharCode(65 + index)}. {option}
+              </div>
+            ))}
+          </div>
+          <button onClick={nextStep} className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">
+            OK
+          </button>
+        </div>
+      )}
+
+      {step === 11 && (
+        <div className="text-center space-y-4 w-full max-w-xl">
+          <label className="text-lg font-semibold">10 → What's your bachelors' in?*</label>
+          <input
+            type="tel"
+            placeholder="Yes"
+            className="w-full p-2 border-b-2 border-green-600 bg-transparent text-green-400 placeholder-green-300 focus:outline-none"
+          />
+          <button className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">
+            OK
+          </button>
+        </div>
+      )}
+
+    </div>
   );
 };
 
