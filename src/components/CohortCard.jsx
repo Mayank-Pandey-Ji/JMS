@@ -1,6 +1,6 @@
 // /components/cohort_card.jsx
 
-const Cohort_card = ({ id, title, desc }) => {
+const CohortCard = ({ id, title, desc }) => {
   return (
     <>
       <div className="w-full p-2.5 flex flex-col text-gray-300 bg-[#0d131b] border-2 border-gray-500 rounded-xl gap-y-4">
@@ -19,4 +19,4 @@ const Cohort_card = ({ id, title, desc }) => {
   )
 }
 
-export default Cohort_card
+export default CohortCard

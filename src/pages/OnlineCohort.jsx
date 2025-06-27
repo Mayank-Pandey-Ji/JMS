@@ -6,7 +6,7 @@ import React, { useState } from "react"
 // eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from "framer-motion"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-import Cohort_card from "../components/cohort_card"
+import CohortCard from "../components/CohortCard.jsx"
 
 const images = [
   "/mentors/kalyani_vaish.png",
@@ -199,7 +199,7 @@ const OnlineCohort = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-6 gap-4 w-full">
             {/* Row 1, Col 1 */}
             <div className="sm:col-start-1 sm:row-start-1 bg-[#09101a] rounded shadow">
-              <Cohort_card
+              <CohortCard
                 id={1}
                 title="Foundation"
                 desc={[
@@ -211,7 +211,7 @@ const OnlineCohort = () => {
 
             {/* Row 2, Col 2 */}
             <div className="sm:col-start-2 sm:row-start-2 bg-[#09101a] rounded shadow">
-              <Cohort_card
+              <CohortCard
                 id={2}
                 title="Case Mastery and Protocols"
                 desc={[
@@ -223,7 +223,7 @@ const OnlineCohort = () => {
 
             {/* Row 3, Col 1 */}
             <div className="sm:col-start-1 sm:row-start-3 bg-[#09101a] rounded shadow">
-              <Cohort_card
+              <CohortCard
                 id={3}
                 title="Case Discussions and Demonstrations"
                 desc={[
@@ -235,7 +235,7 @@ const OnlineCohort = () => {
 
             {/* Row 4, Col 2 */}
             <div className="sm:col-start-2 sm:row-start-4 bg-[#09101a] rounded shadow">
-              <Cohort_card
+              <CohortCard
                 id={4}
                 title="Mastering Online Therapy"
                 desc={[
@@ -247,7 +247,7 @@ const OnlineCohort = () => {
 
             {/* Row 5, Col 1 */}
             <div className="sm:col-start-1 sm:row-start-5 bg-[#09101a] rounded shadow">
-              <Cohort_card
+              <CohortCard
                 id={5}
                 title={"1:1 Mock Sessions"}
                 desc={[
@@ -259,7 +259,7 @@ const OnlineCohort = () => {
 
             {/* Row 6, Col 2 */}
             <div className="sm:col-start-2 sm:row-start-6 bg-[#09101a] rounded shadow">
-              <Cohort_card
+              <CohortCard
                 id={6}
                 title="Graduation 🎓"
                 desc={[
