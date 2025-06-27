@@ -1,10 +1,12 @@
 import "./App.css"
-import HeroSection from "./pages/HeroSection"
+import Header from "./components/Header"
+import HomeScreen from "./pages/HeroPage"
 import OnlineCohort from "./pages/OnlineCohort"
-import ProblemStatementSection from "./pages/ProblemStatementSection"
 function App() {
   return (
     <div>
+      <Header />
+      <HomeScreen />
       <OnlineCohort />
     </div>
   )
