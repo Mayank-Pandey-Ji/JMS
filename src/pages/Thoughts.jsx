@@ -48,10 +48,10 @@ const Thoughts = () => {
   return (
     <section id="thoughts">
       <div className="relative text-white bg-black -z-20 px-6 py-24 gap-y-6 flex flex-col">
-        <img
+        {/* <img
           src="/gradient_bg.avif"
           className="absolute top-0 left-0 w-full h-full object-cover -z-10 opacity-40"
-        />
+        /> */}
 
         {content.map(([line1, line2, highlight], index) => {
           const words = (line1 + (line2 ? " " + line2 : "")).split(" ")
@@ -61,7 +61,9 @@ const Thoughts = () => {
             <motion.div
               key={index}
               className={`flex flex-wrap text-2xl sm:text-3xl md:text-4xl px-2 sm:px-5 md:px-40 leading-relaxed ${
-                highlight ? "font-semibold font-sans" : "font-serif"
+                highlight
+                  ? "font-semibold leading-tight font-sans"
+                  : "font-serif"
               }`}
               variants={lineContainer}
               initial="hidden"

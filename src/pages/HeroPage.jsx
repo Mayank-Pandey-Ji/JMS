@@ -3,7 +3,7 @@
 const HeroPage = () => {
   return (
     <section id="hero">
-      <div className="w-full relative h-[100vh]">
+      <div className="w-full relative h-[100vh] bg-black">
         <img
           src="/hero_bg.png"
           alt="Hero Background"
