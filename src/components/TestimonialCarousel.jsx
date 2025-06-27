@@ -49,7 +49,7 @@ function highlightText(text, highlights) {
     const regex = new RegExp(`(${phrase})`, 'gi');
     result = result.replace(
       regex,
-      '<span class="bg-orange-500/30 px-1 rounded text-orange-200 font-medium">$1</span>'
+      '<span class="bg-[#3aea9b3c] px-1 rounded text-gray-200 font-medium">$1</span>'
     );
   });
   return result;
@@ -57,7 +57,7 @@ function highlightText(text, highlights) {
 
 const TestimonialCarousel = () => {
   return (
-    <section className="py-12 px-4 sm:px-6 lg:px-8 bg-black min-h-screen">
+    <section className="py-12 px-4 sm:px-6 lg:px-8 bg-[#09101a] min-h-screen">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12 text-white">Hear from our members</h2>
         <Swiper
@@ -71,11 +71,11 @@ const TestimonialCarousel = () => {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="relative bg-gradient-to-br from-[#232526] to-[#414345] rounded-2xl p-1 shadow-lg max-w-2xl mx-auto">
-                <div className="bg-black rounded-2xl p-8">
+              <div className="relative bg-gradient-to-br from-[#0f1722] to-[#02050a] rounded-2xl p-1 shadow-lg max-w-2xl mx-auto">
+                <div className="bg-[#10161f] rounded-2xl p-8">
                   <div className="flex mb-4">
                     {[...Array(5)].map((_, i) => (
-                      <span key={i} className={`text-2xl ${i < testimonial.rating ? 'text-yellow-400' : 'text-gray-700'}`}>★</span>
+                      <span key={i} className={`text-2xl ${i < testimonial.rating ? 'text-green-200' : 'text-gray-700'}`}>★</span>
                     ))}
                   </div>
                   <p
@@ -85,7 +85,7 @@ const TestimonialCarousel = () => {
                     }}
                   />
                   <div className="flex items-center mt-4">
-                    <div className="w-12 h-12 rounded-full bg-gray-700 mr-4 overflow-hidden border-2 border-orange-400">
+                    <div className="w-12 h-12 rounded-full bg-gray-700 mr-4 overflow-hidden border-2 border-green-400">
                       <img src={testimonial.image} alt={testimonial.name} className="w-full h-full object-cover" />
                     </div>
                     <div>

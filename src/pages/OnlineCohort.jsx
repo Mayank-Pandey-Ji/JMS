@@ -50,14 +50,14 @@ const OnlineCohort = () => {
   )
   return (
     <>
-      <section id="cohort" className="bg-black">
+      <section id="cohort" className="bg-[#09101a]">
         <div className="w-full text-white py-10 flex flex-col items-center justify-center text-center gap-y-8 px-4">
           <span className="font-semibold text-sm md:text-base">
             6 WEEK ONLINE PROGRAM
           </span>
 
           <span className="font-bold text-3xl md:text-4xl max-w-xs md:max-w-md">
-            Master the <a className="text-[#E7794C]">A&rarr;Z</a> of Practical
+            Master the <a className="text-[#00ff9f]">A&rarr;Z</a> of Practical
             Psychology
           </span>
 
@@ -77,7 +77,7 @@ const OnlineCohort = () => {
         </div>
 
         <div className="flex flex-col w-full items-center justify-center py-5 gap-y-3 px-4">
-          <button className="bg-[#F25C1F] px-6 py-3 rounded-lg text-white font-semibold text-sm md:text-base">
+          <button className="bg-[#27d587] hover:bg-[#f0f2f1] hover:text-[#5fc094] rounded-lg py-2 px-4 transition-all duration-300 hover:cursor-pointer">
             Apply now
           </button>
 
@@ -86,7 +86,7 @@ const OnlineCohort = () => {
           </span>
         </div>
       </section>
-      <section id="everything-you-need" className="bg-black">
+      <section id="everything-you-need" className="bg-[#09101a]">
         <div className="flex flex-col sm:flex-row w-full items-center justify-between px-6 md:px-16 py-10 md:py-20 gap-y-10 sm:gap-x-10">
           {/* Text Section */}
           <div className="flex flex-col max-w-xl gap-y-6 text-center sm:text-left">
@@ -121,8 +121,8 @@ const OnlineCohort = () => {
           </div>
         </div>
       </section>
-      <section id="mentors" className="bg-black">
-        <div className="w-full text-white bg-black py-10 flex flex-col items-center justify-center text-center gap-y-4 px-4">
+      <section id="mentors" className="bg-[#09101a]">
+        <div className="w-full text-white bg-[#09101a] py-10 flex flex-col items-center justify-center text-center gap-y-4 px-4">
           <span className="font-semibold text-base md:text-lg">
             MEET YOUR MENTORS
           </span>
@@ -136,16 +136,16 @@ const OnlineCohort = () => {
           </span>
         </div>
 
-        <div className="w-full mx-auto py-8 bg-black">
+        <div className="w-full mx-auto py-8 bg-[#09101a]">
           <div className="relative overflow-hidden">
             <button
               onClick={prevPage}
-              className="absolute left-5 top-1/2 -translate-y-1/2 z-10 bg-transparent text-orange-400 border-2 border-orange-400 p-1 rounded-full shadow-md hover:-translate-x-2 transition-all duration-200 ease-in-out"
+              className="absolute left-5 top-1/2 -translate-y-1/2 z-10 bg-transparent text-gray-400 border-2 border-gray-400 p-1 rounded-full shadow-md hover:-translate-x-2 transition-all duration-200 ease-in-out"
             >
               <ChevronLeft />
             </button>
 
-            <div className="flex gap-4 justify-center bg-black">
+            <div className="flex gap-4 justify-center bg-[#09101a]">
               <AnimatePresence>
                 {visibleImages.map((src, idx) => (
                   <motion.img
@@ -164,7 +164,7 @@ const OnlineCohort = () => {
 
             <button
               onClick={nextPage}
-              className="absolute right-5 top-1/2 -translate-y-1/2 z-10 bg-trnasparent text-orange-400 border-2 border-orange-400 p-1 rounded-full shadow-md hover:translate-x-2 transition-all duration-200 ease-in-out"
+              className="absolute right-5 top-1/2 -translate-y-1/2 z-10 bg-trnasparent text-gray-400 border-2 border-gray-400 p-1 rounded-full shadow-md hover:translate-x-2 transition-all duration-200 ease-in-out"
             >
               <ChevronRight />
             </button>
@@ -184,21 +184,21 @@ const OnlineCohort = () => {
           </div>
         </div>
       </section>
-      <section className="bg-black text-white py-10 px-2">
+      <section className="bg-[#09101a] text-white py-10 px-2">
         <div className="flex flex-col items-center justify-center text-center w-full gap-y-4">
-          <span>How it works</span>
+          <span className="font-bold text-lg text-[#84efac]">How it works</span>
           <span className="text-4xl font-bold">
             What does the cohort look like?
           </span>
-          <span>
+          <span className="font-bold text-lg text-[#84efac]">
             Our program takes you on a step-by-step journey from foundational
             skills to mastering real-world therapy:
           </span>
         </div>
-        <div className="w-full bg-black px-15 py-10">
+        <div className="w-full bg-[#09101a] px-15 py-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-6 gap-4 w-full">
             {/* Row 1, Col 1 */}
-            <div className="sm:col-start-1 sm:row-start-1 bg-black rounded shadow">
+            <div className="sm:col-start-1 sm:row-start-1 bg-[#09101a] rounded shadow">
               <Cohort_card
                 id={1}
                 title="Foundation"
@@ -210,7 +210,7 @@ const OnlineCohort = () => {
             </div>
 
             {/* Row 2, Col 2 */}
-            <div className="sm:col-start-2 sm:row-start-2 bg-black rounded shadow">
+            <div className="sm:col-start-2 sm:row-start-2 bg-[#09101a] rounded shadow">
               <Cohort_card
                 id={2}
                 title="Case Mastery and Protocols"
@@ -222,7 +222,7 @@ const OnlineCohort = () => {
             </div>
 
             {/* Row 3, Col 1 */}
-            <div className="sm:col-start-1 sm:row-start-3 bg-black rounded shadow">
+            <div className="sm:col-start-1 sm:row-start-3 bg-[#09101a] rounded shadow">
               <Cohort_card
                 id={3}
                 title="Case Discussions and Demonstrations"
@@ -234,7 +234,7 @@ const OnlineCohort = () => {
             </div>
 
             {/* Row 4, Col 2 */}
-            <div className="sm:col-start-2 sm:row-start-4 bg-black rounded shadow">
+            <div className="sm:col-start-2 sm:row-start-4 bg-[#09101a] rounded shadow">
               <Cohort_card
                 id={4}
                 title="Mastering Online Therapy"
@@ -246,7 +246,7 @@ const OnlineCohort = () => {
             </div>
 
             {/* Row 5, Col 1 */}
-            <div className="sm:col-start-1 sm:row-start-5 bg-black rounded shadow">
+            <div className="sm:col-start-1 sm:row-start-5 bg-[#09101a] rounded shadow">
               <Cohort_card
                 id={5}
                 title={"1:1 Mock Sessions"}
@@ -258,7 +258,7 @@ const OnlineCohort = () => {
             </div>
 
             {/* Row 6, Col 2 */}
-            <div className="sm:col-start-2 sm:row-start-6 bg-black rounded shadow">
+            <div className="sm:col-start-2 sm:row-start-6 bg-[#09101a] rounded shadow">
               <Cohort_card
                 id={6}
                 title="Graduation 🎓"

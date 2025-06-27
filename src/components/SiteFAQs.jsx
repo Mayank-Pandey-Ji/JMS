@@ -55,7 +55,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-black min-h-screen">
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#09101a] min-h-screen">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-white mb-4">FAQs</h1>
@@ -68,18 +68,18 @@ const FAQ = () => {
               key={index}
               className="relative bg-gradient-to-br from-[#232526] to-[#414345] p-1 rounded-2xl shadow-lg"
             >
-              <div className="bg-black rounded-2xl">
+              <div className="bg-[#09101a] rounded-2xl">
                 <button
                   className={`w-full text-left p-6 flex justify-between items-center rounded-2xl transition-colors ${
                     activeIndex === index
-                      ? 'bg-gradient-to-r from-orange-500/20 to-orange-400/10'
+                      ? 'bg-gradient-to-r from-[#0f1722] to-[#02050a]'
                       : ''
                   }`}
                   onClick={() => toggleAnswer(index)}
                 >
                   <h3 className="text-lg font-semibold text-white">{faq.question}</h3>
                   <svg
-                    className={`w-6 h-6 text-orange-400 transform transition-transform ${
+                    className={`w-6 h-6 text-gray-400 transform transition-transform ${
                       activeIndex === index ? 'rotate-180' : ''
                     }`}
                     fill="none"
@@ -90,7 +90,7 @@ const FAQ = () => {
                   </svg>
                 </button>
                 {activeIndex === index && (
-                  <div className="p-6 bg-black border-t border-gray-800 rounded-b-2xl">
+                  <div className="p-6 bg-gradient-to-l from-[#0f1722] to-[#02050a] rounded-b-2xl">
                     <p className="text-gray-200">{faq.answer}</p>
                   </div>
                 )}
@@ -101,14 +101,14 @@ const FAQ = () => {
 
         {/* Still have questions? */}
         <div className="text-center bg-gradient-to-br from-[#232526] to-[#414345] p-1 rounded-2xl shadow-lg">
-          <div className="bg-black rounded-2xl p-8">
+          <div className="bg-[#09101a] rounded-2xl p-8">
             <h3 className="text-2xl font-semibold text-white mb-4">Still have questions?</h3>
             <p className="text-gray-300 mb-6">
               Reach out to our team on email and we'll be happy to answer your questions :)
             </p>
             <a
               href="mailto:contact@rocketacademy.com"
-              className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-6 rounded-lg transition-colors"
+              className="inline-block bg-gradient-to-l from-green-600 to-[#55e6a5] hover:from-[#55e6a5] hover:to-green-600 text-[#09101a] font-medium py-3 px-6 rounded-lg transition-colors"
             >
               Contact Us
             </a>

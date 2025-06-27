@@ -47,7 +47,7 @@ const Thoughts = () => {
 
   return (
     <section id="thoughts">
-      <div className="relative text-white bg-black -z-20 px-6 py-24 gap-y-6 flex flex-col">
+      <div className="relative text-white bg-[#09101a] -z-20 px-6 py-24 gap-y-6 flex flex-col">
         {/* <img
           src="/gradient_bg.avif"
           className="absolute top-0 left-0 w-full h-full object-cover -z-10 opacity-40"
@@ -75,7 +75,7 @@ const Thoughts = () => {
                 <motion.span
                   key={i}
                   className={`inline-block mr-2 ${
-                    isHighlighted(i) ? "text-[#DA4E15]" : ""
+                    isHighlighted(i) ? "text-[#00ff9f]" : ""
                   }`}
                   variants={wordFade}
                 >
