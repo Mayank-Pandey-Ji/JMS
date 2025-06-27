@@ -7,11 +7,20 @@ import ProgramDetails from './components/ProgramDetails'
 import ProgramFeatures from './components/ProgramFeatures'
 import ProgramFit from './components/ProgramFit'
 import VideoTestimonials from './components/VideoTestimonials'
+import SiteFAQs from './components/SiteFAQs'
+import ContactUs from './components/ContactUs'
 function App() {
 
   return (
     <>
-    
+    <ProgramFeatures />
+      <ProgramFit />
+      <HowToGetIn />
+      <ProgramDetails />
+      <VideoTestimonials />
+      <TestimonialCarousel/>
+      <SiteFAQs/>
+      <ContactUs/>
     </>
   )
 }
