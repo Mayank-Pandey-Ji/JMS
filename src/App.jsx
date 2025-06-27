@@ -9,6 +9,8 @@ import ProgramDetails from "./components/ProgramDetails"
 import VideoTestimonials from "./components/VideoTestimonials"
 import TestimonialCarousel from "./components/TestimonialCarousel"
 import Header from "./components/Header"
+import SiteFAQs from "./components/SiteFAQs"
+import ContactUs from "./components/ContactUs"
 
 const App = () => {
   return (
@@ -23,6 +25,8 @@ const App = () => {
       <ProgramDetails />
       <VideoTestimonials />
       <TestimonialCarousel />
+      <SiteFAQs />
+      <ContactUs />
     </>
   )
 }
