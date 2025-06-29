@@ -6,23 +6,23 @@ const ContactUs = () => {
       <main className="flex-1 flex flex-col items-center justify-center text-center px-4">
         <h1 className="text-5xl font-bold text-white mb-4">Ready to Take the Leap?</h1>
         <p className="text-lg text-white mb-8">
-          Your journey to becoming a confident, skilled psychologist starts here.
+          Your journey to becoming a confident, skilled researcher starts here.
         </p>
         <div className="flex flex-col sm:flex-row items-center gap-4 mb-12">
           <button className="bg-[#27d587] hover:bg-[#f0f2f1] hover:text-[#5fc094] rounded-lg py-2 px-4 transition-all duration-300 hover:cursor-pointer">
             Apply now
           </button>
-          <span className="flex items-center px-4 py-2 bg-transparent">
+          {/* <span className="flex items-center px-4 py-2 bg-transparent">
             <span className="w-3 h-3 rounded-full bg-green-400 inline-block mr-2"></span>
             <span className="text-white text-base font-medium">
               C5 is ongoing. Enrollment for C6 is <span className="font-semibold">live.</span>
             </span>
-          </span>
+          </span> */}
         </div>
         <div className="flex flex-col sm:flex-row gap-6 w-full max-w-2xl justify-center mb-20">
           <div className="flex-1 bg-[#030a14] bg-opacity-80 border-2 border-gray-400 rounded-xl px-8 py-6 flex flex-col items-center">
             <p className="text-green-400 text-sm font-medium mb-2">Next Cohort</p>
-            <p className="text-2xl font-bold text-white">28th July, 2025</p>
+            <p className="text-2xl font-bold text-white">2026</p>
           </div>
           <div className="flex-1 bg-[#030a14] bg-opacity-80 border-2 border-gray-400 rounded-xl px-8 py-6 flex flex-col items-center">
             <p className="text-green-400 text-sm font-medium mb-2">Enrollment</p>

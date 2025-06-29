@@ -17,31 +17,31 @@ const HeroPage = () => {
 
         <div className="absolute top-0 left-0 right-0 h-full flex flex-col items-center justify-center px-6 sm:px-10 text-center">
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-semibold leading-tighter tracking-tighter text-white max-w-3xl">
-            From Theory to Therapy -{" "}
+            From Theory to Application -{" "}
             <span className="bg-gradient-to-r from-[#ebf0ee] to-[#55e6a5] bg-clip-text text-transparent italic">
               Skill Building
             </span>{" "}
-            Courses
+            Summer School
           </h1>
           <h2 className="text-[#aff7dc] font-semibold py-6 tracking-wider leading-tight max-w-3xl text-base sm:text-lg">
             Transform academic knowledge into practical skills with expert-led
             courses, hands-on experience, and mentorship—designed to prepare you
-            for success as a professional psychologist.
+            for success as a professional Researcher.
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 items-center text-white">
             <button onClick={goToAbout} className="bg-[#27d587] hover:bg-[#f0f2f1] hover:text-[#5fc094] rounded-lg py-2 px-4 transition-all duration-300 hover:cursor-pointer">
             Apply now
           </button>
-            <span className="text-sm sm:text-base font-semibold px-6 w-xs text-center">
+            {/* <span className="text-sm sm:text-base font-semibold px-6 w-xs text-center">
               🟢 C5 is ongoing. Enrollment for C6 is live.
-            </span>
+            </span> */}
           </div>
           <div className="flex flex-col sm:flex-row gap-3 pt-10 ">
             <div className="w-sm rounded-xl border-2 border-[#00ff9f] bg-[#02050a] flex flex-col px-7 py-5 items-baseline justify-center gap-y-2">
               <span className="text-[#00ff9f] text-sm font-bold">
                 Next Cohort
               </span>
-              <span className="text-white font-bold">28th July, 2025</span>
+              <span className="text-white font-bold">2026</span>
             </div>
             <div className="w-sm rounded-xl border-2 border-[#00ff9f] bg-[#02050a] flex flex-col px-7 py-5 items-baseline justify-center gap-y-2">
               <span className="text-[#00ff9f] text-sm font-bold">

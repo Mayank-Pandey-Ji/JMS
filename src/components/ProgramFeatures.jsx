@@ -8,7 +8,7 @@ const ProgramFeatures = () => {
             From the basics to mastering real-world therapy.
           </h1>
           <p className="text-xl text-gray-400">
-            Join our comprehensive program designed for aspiring psychologists
+            Join our comprehensive program designed for aspiring researcher
           </p>
         </div>
 
@@ -21,7 +21,7 @@ const ProgramFeatures = () => {
             </div>
             <h3 className="text-xl font-bold text-white mb-4">Weekly LIVE Sessions</h3>
             <p className="text-gray-400">
-              Interactive, engaging, and tailored to all, whether you're an introvert or extrovert
+              Interactive, engaging, and tailored to all, whether you're an average or professional researcher
             </p>
           </div>
 
@@ -32,7 +32,7 @@ const ProgramFeatures = () => {
             </div>
             <h3 className="text-xl font-bold text-white mb-4">Find Your Tribe</h3>
             <p className="text-gray-400">
-              Network with psychologists from diverse backgrounds. Many lifelong connections begin here
+              Network with researchers from diverse backgrounds. Many lifelong connections begin here
             </p>
           </div>
 
@@ -43,7 +43,7 @@ const ProgramFeatures = () => {
             </div>
             <h3 className="text-xl font-bold text-white mb-4">Practice-Based Learning</h3>
             <p className="text-gray-400">
-              Hands-on casework and assignments mirror real-world challenges faced by professional psychologists
+              Hands-on research-work and assignments mirror real-world challenges faced by professional researchers
             </p>
           </div>
 

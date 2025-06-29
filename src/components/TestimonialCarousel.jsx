@@ -7,9 +7,9 @@ import 'swiper/css/pagination';
 const testimonials = [
   {
     rating: 5,
-    quote: 'The training program was packed with relatable stories and practical examples that made technical concepts come alive. It demystified the therapist’s role, emphasizing being authentic and approachable. Techniques like grounding exercises and structured case formulations were game-changers. Inclusivity and adaptability stood out, and personalized feedback sessions boosted my confidence. This experience has made therapy sessions feel less intimidating and more impactful.',
+    quote: 'The training program was packed with relatable case studies and actionable insights that brought complex ideas to life. It broke down the often-intimidating role of leadership into something authentic and human. Frameworks like structured problem-solving and reflective thinking proved to be game-changers. The emphasis on inclusivity and adaptability deeply resonated with me, and personalized feedback sharpened my decision-making. This experience has made collaboration and innovation feel more natural, and far more impactful.',
     name: 'Sampurna Nag',
-    role: 'Counselling Psychologist',
+    role: 'Professional Researcher',
     image: '../assets/Sampurna Nag.png',
     highlights: [
       'relatable stories',
@@ -19,9 +19,9 @@ const testimonials = [
   },
   {
     rating: 5,
-    quote: 'The sessions were incredibly engaging, with diverse perspectives from the trainers. Case discussions and mock therapy sessions were invaluable, preparing me for real-world practice. Tackling real therapy concerns like managing overabundant speech was a highlight. Overall, the training was challenging, inspiring, and rewarding—a perfect launchpad for a fresher like me.',
+    quote: 'The sessions were incredibly engaging, enriched by diverse perspectives from mentors and industry experts. Case studies and simulation exercises proved invaluable in preparing me for real-world challenges. Addressing practical concerns like managing information overload in communication was a standout. Overall, the program was demanding, inspiring, and deeply rewarding a perfect launchpad for someone entering the field with fresh ideas and ambition.',
     name: 'Celina Daniel',
-    role: 'Counselling Psychologist',
+    role: 'Professional Researcher',
     image: '../assets/Celina Daniel.png',
     highlights: [
       'real-world practice',
@@ -30,9 +30,9 @@ const testimonials = [
   },
   {
     rating: 5,
-    quote: 'The training was highly beneficial and insightful. It was very insightful with lots of learnings and understanding. Overall, it was an enriching experience that has equipped me with the skills and confidence to excel in my career as a psychologist.',
+    quote: 'The training was immensely valuable and filled with deep insights. It offered a wealth of practical learning and strategic understanding. Overall, it was an enriching experience that has equipped me with the clarity, skills, and confidence to thrive in my journey as a researcher and entrepreneur.',
     name: 'Angelina Johnson',
-    role: 'Counselling Psychologist',
+    role: 'Professional Researcher',
     image: '../assets/Celina Daniel.png',
     highlights: [
       'highly beneficial',

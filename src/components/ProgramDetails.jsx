@@ -1,9 +1,9 @@
 const ProgramDetails = () => {
   const benefits = [
-    "Admission into the upcoming cohort, with access to therapy tools, resources and live recordings",
-    "1:1 mentorship and supervision from experienced psychologists to build a successful career as a therapist",
-    "Exclusive access to a network of psychologists, workshops and meet ups",
-    "Career guidance to help you design your next chapter — whether it's scaling your practice, discovering your areas of interest, or building a hybrid career beyond 1:1 therapy"
+    "Admission into the upcoming cohort, with access to research tools, resources and live recordings",
+    "1:1 mentorship and supervision from experienced researchers to build a successful career as a researcher",
+    "Exclusive access to a network of researchers, workshops and meet ups",
+    "Career guidance to help you design your next chapter — whether it's scaling your practice, discovering your areas of interest, or building a hybrid career beyond 1:1 research"
   ];
 
   return (

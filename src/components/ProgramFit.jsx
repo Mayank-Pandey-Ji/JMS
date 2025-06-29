@@ -15,10 +15,10 @@ const ProgramFit = () => {
             <h2 className="text-2xl font-bold text-white mb-8">You're the right fit if</h2>
             <ul className="space-y-6">
               {[
-                "You are a qualified psychologist with a Master's degree or higher",
+                "You are a qualified researcher with a Master's degree or higher",
                 "You are eager to unlearn and relearn for growth and improvement", 
                 "You want hands-on practical exposure before stepping into real-world practice",
-                "You are passionate about delivering impactful therapy and making a difference in clients' lives"
+                "You are passionate about delivering impactful research and making a difference in people' lives"
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-500 flex items-center justify-center mr-4 mt-0.5">

@@ -8,6 +8,8 @@ import { motion, AnimatePresence } from "framer-motion"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import CohortCard from "../components/CohortCard.jsx"
 import { useNavigate } from "react-router-dom"
+import cohort from "../assets/cohort.jpg"
+import cohort2 from "../assets/picture2.jpg"
 
 
 const images = [
@@ -35,6 +37,7 @@ const images = [
   "/mentors/sudha_nanduri.png",
   "/mentors/vartika_singh.png",
   "/mentors/somdatta_mukherjee.png",
+
 ]
 
 const IMAGES_PER_SLIDE = 3
@@ -64,21 +67,21 @@ const OnlineCohort = () => {
 
           <span className="font-bold text-3xl md:text-4xl max-w-xs md:max-w-md">
             Master the <a className="text-[#00ff9f]">A&rarr;Z</a> of Practical
-            Psychology
+            Research
           </span>
 
           <span className="text-sm md:text-base max-w-lg">
-            We&#39;ll help you evolve from a young psychologist to a confident,
+            We&#39;ll help you evolve from a young Researcher to a confident,
             skilled professional, equipping you with hands-on experience,
-            real-world techniques, and the confidence to excel in therapy.
+            real-world techniques, and the confidence to excel in academics.
           </span>
         </div>
 
         <div className="w-full flex items-center justify-center px-4 py-6">
           <img
-            src="/ggl_meet_cohort.png"
-            alt="googlemeet"
-            className="w-full max-w-xs md:max-w-lg h-auto"
+            src={cohort}
+            alt="meet"
+            className="w-full max-w-xs md:max-w-lg h-auto border-8 border-gray-500"
           />
         </div>
 
@@ -88,7 +91,7 @@ const OnlineCohort = () => {
           </button>
 
           <span className="text-white font-semibold text-sm md:text-base">
-            COHORT STARTS ON JULY 28
+            COHORT WILL START  SSON
           </span>
         </div>
       </section>
@@ -97,7 +100,7 @@ const OnlineCohort = () => {
           {/* Text Section */}
           <div className="flex flex-col max-w-xl gap-y-6 text-center sm:text-left">
             <span className="font-bold text-3xl md:text-5xl text-white leading-tight">
-              Everything You Need to Succeed as a Psychologist
+              Everything You Need to Succeed as a Researcher
             </span>
 
             <span className="text-white font-bold text-xl md:text-2xl">
@@ -120,9 +123,9 @@ const OnlineCohort = () => {
           {/* Image Section */}
           <div className="w-full sm:w-auto flex justify-center">
             <img
-              src="/ggl_meet_2.png"
+              src={cohort2}
               alt="googlemeet"
-              className="w-full max-w-xs sm:max-w-md md:max-w-lg rounded-2xl h-auto"
+              className="w-full max-w-xs sm:max-w-md md:max-w-lg rounded-2xl h-auto border-8 border-gray-500"
             />
           </div>
         </div>
@@ -134,7 +137,7 @@ const OnlineCohort = () => {
           </span>
 
           <span className="font-bold text-2xl md:text-4xl max-w-xl leading-snug">
-            Guided by world-class psychologists, every week.
+            Guided by world-class researchers, every week.
           </span>
 
           <span className="text-sm md:text-base text-gray-200">
@@ -142,7 +145,7 @@ const OnlineCohort = () => {
           </span>
         </div>
 
-        <div className="w-full mx-auto py-8 bg-[#09101a]">
+        {/* <div className="w-full mx-auto py-8 bg-[#09101a]">
           <div className="relative overflow-hidden">
             <button
               onClick={prevPage}
@@ -177,7 +180,7 @@ const OnlineCohort = () => {
           </div>
 
           {/* Dots */}
-          <div className="flex justify-center mt-4 gap-2">
+          {/* <div className="flex justify-center mt-4 gap-2">
             {Array.from({ length: totalPages }).map((_, i) => (
               <button
                 key={i}
@@ -187,8 +190,8 @@ const OnlineCohort = () => {
                 }`}
               />
             ))}
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </section>
       <section className="bg-[#09101a] text-white py-10 px-2">
         <div className="flex flex-col items-center justify-center text-center w-full gap-y-4">
@@ -197,8 +200,8 @@ const OnlineCohort = () => {
             What does the cohort look like?
           </span>
           <span className="font-bold text-lg text-[#84efac]">
-            Our program takes you on a step-by-step journey from foundational
-            skills to mastering real-world therapy:
+            Our Academy takes you on a step-by-step journey from foundational
+            skills to mastering real-world research:
           </span>
         </div>
         <div className="w-full bg-[#09101a] px-15 py-10">
@@ -210,7 +213,7 @@ const OnlineCohort = () => {
                 title="Foundation"
                 desc={[
                   "✦ Develop essential practical skills",
-                  "✦ Learn the traits of an effective psychologist",
+                  "✦ Learn the traits of an effective researcher",
                 ]}
               />
             </div>
@@ -219,10 +222,10 @@ const OnlineCohort = () => {
             <div className="sm:col-start-2 sm:row-start-2 bg-[#09101a] rounded shadow">
               <CohortCard
                 id={2}
-                title="Case Mastery and Protocols"
+                title="Case Mastery"
                 desc={[
                   "✦ Master the art of history-taking and case formulation",
-                  "✦ Gain proficiency in key therapeutic frameworks and protocols",
+                  "✦ Gain proficiency in key research frameworks and techniques",
                 ]}
               />
             </div>
@@ -231,10 +234,10 @@ const OnlineCohort = () => {
             <div className="sm:col-start-1 sm:row-start-3 bg-[#09101a] rounded shadow">
               <CohortCard
                 id={3}
-                title="Case Discussions and Demonstrations"
+                title="Research and Demonstrations"
                 desc={[
-                  "✦ Dive into dynamic case discussions",
-                  "✦ Learn to present, analyze, and formulate cases with clarity",
+                  "✦ Dive into dynamic research techniques",
+                  "✦ Learn to present, analyze, and formulate researched work with clarity",
                 ]}
               />
             </div>
@@ -243,9 +246,9 @@ const OnlineCohort = () => {
             <div className="sm:col-start-2 sm:row-start-4 bg-[#09101a] rounded shadow">
               <CohortCard
                 id={4}
-                title="Mastering Online Therapy"
+                title="Mastering Online research"
                 desc={[
-                  "✦ Learn the nuances of conducting therapy in virtual settings to make it engaging and effective",
+                  "✦ Conduct effective research in virtual environments",
                   "✦ Develop confidence in using digital tools and platforms for seamless client interactions",
                 ]}
               />
@@ -257,7 +260,7 @@ const OnlineCohort = () => {
                 id={5}
                 title={"1:1 Mock Sessions"}
                 desc={[
-                  "✦ Practice diverse therapy modalities in simulated environments",
+                  "✦ Practice diverse research modalities in simulated environments",
                   "✦ Build confidence with real-world applications.",
                 ]}
               />

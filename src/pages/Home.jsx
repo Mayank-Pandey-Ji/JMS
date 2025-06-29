@@ -1,6 +1,5 @@
 import React from 'react'
 import HeroPage from "./HeroPage"
-import Thoughts from "./Thoughts"
 import OnlineCohort from "./OnlineCohort"
 import ProgramFeatures from "../components/ProgramFeatures"
 import ProgramFit from "../components/ProgramFit"
@@ -18,7 +17,6 @@ const Home = () => {
     <Header />
     <HeroPage />
     <VSSERAbout/>
-    <Thoughts />
     <OnlineCohort />
     <ProgramFeatures />
     <ProgramFit />

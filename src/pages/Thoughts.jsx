@@ -4,18 +4,16 @@ import { motion } from "framer-motion"
 const Thoughts = () => {
   const content = [
     [
-      `After reviewing over 20,000+ applications while hiring at Rocket Health, we found a big problem:`,
-      `college equips students with theory, but fails to prepare them for real-world practice.`,
-      true,
+      `About VSSER`
     ],
     [
-      `This issue repeatedly came up in our interviews with thousands of psychologists, where we often had to tell candidates to gain practical experience before reapplying.`,
+      `The Virtual Summer School in Entrepreneurship Research (VSSER) is a global, no-fee academic platform designed to build research capacity in the field of entrepreneurship. Established in 2021, VSSER has quickly grown into one of the most accessible and widely attended initiatives for emerging scholars, attracting over 1,000 participants from more than 35 countries in its first four years.`,
     ],
     [
-      `Many young psychologists shared that it’s a chicken-and-egg problem—companies require experience, but there’s no clear path to gain it.`,
+      `VSSER provides an opportunity to learn directly from leading researchers, gain insights into publishing in top-tier entrepreneurship journals, and connect with a global network of like-minded individuals passionate about entrepreneurship research. Whether you are a student, early-career researcher, or an aspiring academic, VSSER offers an inclusive space to enhance your research skills, understand contemporary debates, and engage with cutting-edge scholarship.`,
     ],
     [
-      `Despite the surge in demand for mental health professionals, the divide between academic learning and practical application continues to grow.`,
+      `Why Join VSSER?`,true,
     ],
     [
       `Many have the potential to become exceptional psychologists but need to refine their skills and build confidence before working with clients. Young psychologists excel in theory but need real-world experience.`,

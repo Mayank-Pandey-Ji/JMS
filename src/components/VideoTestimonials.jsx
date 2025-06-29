@@ -97,7 +97,7 @@ const VideoTestimonials = () => {
 
           {/* Call to Action */}
           <div className="text-center mt-12">
-            <p className="text-gray-300 mb-6">Ready to transform your therapy career?</p>
+            <p className="text-gray-300 mb-6">Ready to transform your research career?</p>
             <button className="bg-gradient-to-r  from-green-600 to-[#55e6a5] hover:from-[#55e6a5] hover:to-green-600 text-[#09101a]  font-bold py-4 px-10 rounded-xl text-lg transition-all hover:scale-105 shadow-lg hover:shadow-gray-600 border border-gray-300">
               Watch Full Program Overview
             </button>
