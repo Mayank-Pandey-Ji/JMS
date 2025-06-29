@@ -11,11 +11,13 @@ import TestimonialCarousel from "../components/TestimonialCarousel"
 import Header from "../components/Header"
 import SiteFAQs from "../components/SiteFAQs"
 import ContactUs from "../components/ContactUs"
+import VSSERAbout from "../components/VSSERAbout"
 const Home = () => {
   return (
     <>
     <Header />
     <HeroPage />
+    <VSSERAbout/>
     <Thoughts />
     <OnlineCohort />
     <ProgramFeatures />
