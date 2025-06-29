@@ -76,7 +76,7 @@ const ProgramFeatures = () => {
             </div>
             <h3 className="text-xl font-bold text-white mb-4">Lifetime Community</h3>
             <p className="text-gray-400">
-              Cohort members enjoy lifetime access to our Rocket Academy family, fostering lasting career and personal growth
+              Cohort members enjoy lifetime access to our VSSER family, fostering lasting career and personal growth
             </p>
           </div>
         </div>

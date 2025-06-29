@@ -9,19 +9,19 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "Will Rocket Academy help me get a job?",
+      question: "Will VSSER help me get a job?",
       answer: "Yes! Our program includes career guidance and networking opportunities to help you secure positions in the field of psychology."
     },
     {
-      question: "Will Rocket Health hire me after Rocket Academy?",
-      answer: "While we don't guarantee employment, many of our graduates have gone on to work with Rocket Health and our partner organizations."
+      question: "Will VSSER hire me after training ",
+      answer: "While we don't guarantee employment, many of our graduates have gone on to work with VSSER nd our partner organizations."
     },
     {
-      question: "Who should join Rocket Academy?",
+      question: "Who should join VSSER ",
       answer: "Qualified psychologists with a Master's degree or higher who are eager to enhance their practical skills and clinical experience."
     },
     {
-      question: "Who shouldn't join Rocket Academy?",
+      question: "Who shouldn't join VSSER ",
       answer: "Individuals without foundational qualifications or those looking for purely theoretical learning without practical application."
     },
     {

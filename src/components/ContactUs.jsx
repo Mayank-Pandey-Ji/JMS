@@ -31,11 +31,11 @@ const ContactUs = () => {
         </div>
       </main>
       <footer className="relative bg-[#09101a] text-white py-8 text-center">
-        <div className="text-2xl font-semibold mb-2">Rocket <span className="font-normal">Academy</span></div>
+        <div className="text-2xl font-semibold mb-2"><span className="font-normal">VSSER</span></div>
         <div className="text-sm opacity-70">© 2025. All right reserved.</div>
         <div className="absolute right-6 bottom-6">
           <span className="bg-green-500 text-white px-4 py-2 rounded-lg text-sm font-medium shadow-lg">
-            Powered by <span className="font-semibold">Rocket Health</span>
+            Powered by <span className="font-semibold">VSSER</span>
           </span>
         </div>
       </footer>
