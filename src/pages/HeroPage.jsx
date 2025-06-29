@@ -16,16 +16,16 @@ const HeroPage = () => {
         />
 
         <div className="absolute top-0 left-0 right-0 h-full flex flex-col items-center justify-center px-6 sm:px-10 text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-semibold leading-tighter tracking-tighter text-white max-w-3xl">
-            From Theory to Application -{" "}
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold leading-tighter tracking-tighter text-white max-w-3xl">
+            From Theory to {" "}
             <span className="bg-gradient-to-r from-[#ebf0ee] to-[#55e6a5] bg-clip-text text-transparent italic">
-              Skill Building
+             Application - Skill Building
             </span>{" "}
             Summer School
           </h1>
           <h2 className="text-[#aff7dc] font-semibold py-6 tracking-wider leading-tight max-w-3xl text-base sm:text-lg">
             Transform academic knowledge into practical skills with expert-led
-            courses, hands-on experience, and mentorship—designed to prepare you
+            courses, hands-on experience, and mentorship designed to prepare you
             for success as a professional Researcher.
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 items-center text-white">
